@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Github Connections</string>
+
+    <string name="login_welcome">Let\'s get started! Enter your username:</string>
+    <string name="login_username_hint">username</string>
+    <string name="login_button">Login</string>
+    <string name="login_github_description">Github logo</string>
+    <string name="login_user_description">User logo</string>
+    <string name="login_autofill_hint">username</string>
+
+    <string name="profile_name">Username</string>
+    <string name="profile_bio">Bio placeholder..</string>
+    <string name="profile_location">Location: Place</string>
+    <string name="profile_followers">Followers: \n %1$d</string>
+    <string name="profile_followers_placeholder">Followers: \n 0</string>
+    <string name="profile_following">Following: \n %1$d</string>
+    <string name="profile_following_placeholder">Following: \n 0</string>
+    <string name="profile_image_description">Profile picture</string>
+    <string name="profile_user_description">Username logo</string>
+    <string name="profile_location_description">Location icon</string>
+
+    <string name="repos_name">Repo name goes here</string>
+    <string name="repos_description">Description (smaller text, lighter font maybe?). This could be a couple of lines long as well..</string>
+    <string name="repos_forks">52</string>
+    <string name="repos_watchers">12</string>
+    <string name="repos_name_description">Repository icon</string>
+    <string name="repos_forks_description">Fork count icon</string>
+    <string name="repos_watchers_description">Watchers count icon</string>
+
+    <string name="friends_user_name">Username</string>
+    <string name="friends_user_logo">User logo</string>
+    <string name="friends_user_image_description">Profile picture of a friend</string>
+
+    <string name="toolbar_button">OK</string>
+    <string name="toolbar_backButton_description">Back button</string>
+    <string name="toolbar_logoutButton_description">Logout button</string>
+</resources>

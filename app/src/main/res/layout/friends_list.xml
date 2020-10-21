@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/common_button">
+
+    <ImageView
+        android:id="@+id/friends_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/friends_user_image_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/profile_user_logo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:contentDescription="@string/friends_user_logo"
+        app:layout_constraintBottom_toBottomOf="@id/friends_image"
+        app:layout_constraintEnd_toStartOf="@+id/friends_name"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/friends_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/github_user" />
+
+    <TextView
+        android:id="@+id/friends_name"
+        style="@style/UsernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/friends_user_name"
+        app:layout_constraintBottom_toBottomOf="@id/friends_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/friends_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separatorLine"
+        style="@style/SeparatorHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/friends_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

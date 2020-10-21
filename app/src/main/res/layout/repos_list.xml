@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/repos_name_image"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/repos_name_description"
+        app:layout_constraintEnd_toStartOf="@+id/repos_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/github_repo" />
+
+    <TextView
+        android:id="@+id/repos_name"
+        style="@style/ReposNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/repos_name"
+        app:layout_constraintStart_toEndOf="@id/repos_name_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repos_description"
+        style="@style/ReposDetailsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/repos_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repos_name" />
+
+    <ImageView
+        android:id="@+id/repos_forks_image"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/repos_forks_description"
+        app:layout_constraintBottom_toBottomOf="@id/repos_forks"
+        app:layout_constraintEnd_toStartOf="@id/repos_forks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/repos_forks"
+        app:srcCompat="@drawable/github_fork" />
+
+    <TextView
+        android:id="@+id/repos_forks"
+        style="@style/ReposDetailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/repos_forks"
+        app:layout_constraintStart_toEndOf="@id/repos_forks_image"
+        app:layout_constraintTop_toBottomOf="@+id/repos_description" />
+
+    <ImageView
+        android:id="@+id/repos_watchers_image"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/repos_watchers_description"
+        app:layout_constraintBottom_toBottomOf="@id/repos_watchers"
+        app:layout_constraintEnd_toStartOf="@id/repos_watchers"
+        app:layout_constraintStart_toEndOf="@id/repos_forks"
+        app:layout_constraintTop_toTopOf="@id/repos_forks"
+        app:srcCompat="@drawable/github_watchers" />
+
+    <TextView
+        android:id="@+id/repos_watchers"
+        style="@style/ReposDetailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/repos_watchers"
+        app:layout_constraintStart_toEndOf="@+id/repos_watchers_image"
+        app:layout_constraintTop_toBottomOf="@+id/repos_description" />
+
+    <View
+        android:id="@+id/separatorLine"
+        style="@style/SeparatorHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/repos_forks" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

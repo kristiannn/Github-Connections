@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/profile_image_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/profile_user_logo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:contentDescription="@string/profile_user_description"
+        app:layout_constraintBottom_toTopOf="@+id/separatorLine1"
+        app:layout_constraintEnd_toStartOf="@+id/profile_name"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/github_user" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        style="@style/UsernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/profile_name"
+        app:layout_constraintBottom_toTopOf="@id/separatorLine1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separatorLine1"
+        style="@style/SeparatorHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+
+    <TextView
+        android:id="@+id/profile_bio"
+        style="@style/ProfileBioText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/profile_bio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separatorLine1" />
+
+    <View
+        android:id="@+id/separatorLine2"
+        style="@style/SeparatorHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_bio" />
+
+    <ImageView
+        android:id="@+id/profile_location_logo"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/profile_location_description"
+        app:layout_constraintBottom_toBottomOf="@id/profile_location"
+        app:layout_constraintEnd_toStartOf="@+id/profile_location"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_location"
+        app:srcCompat="@drawable/github_location" />
+
+    <TextView
+        android:id="@+id/profile_location"
+        style="@style/ProfileLocationText"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:text="@string/profile_location"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button_followers"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_location_logo"
+        app:layout_constraintTop_toBottomOf="@id/separatorLine2" />
+
+    <Button
+        android:id="@+id/profile_button_followers"
+        style="@style/CommonButtonStyle.SmallerText"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:text="@string/profile_followers_placeholder"
+        app:layout_constraintBottom_toBottomOf="@id/profile_location"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button_following"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_location"
+        app:layout_constraintTop_toTopOf="@+id/profile_location" />
+
+    <Button
+        android:id="@+id/profile_button_following"
+        style="@style/CommonButtonStyle.SmallerText"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:minHeight="50dp"
+        android:text="@string/profile_following_placeholder"
+        app:layout_constraintBottom_toBottomOf="@id/profile_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_button_followers"
+        app:layout_constraintTop_toTopOf="@+id/profile_location" />
+
+    <View
+        android:id="@+id/separatorLine3"
+        style="@style/SeparatorHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

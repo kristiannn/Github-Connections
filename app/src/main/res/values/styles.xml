@@ -1,0 +1,121 @@
+<resources>
+
+    <style name="AppTheme.Launcher" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorButtonBackground</item>
+        <item name="android:shadowColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="SeparatorHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@color/colorLineSeparator</item>
+    </style>
+
+    <style name="LoginButtonStyle">
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="CommonButtonStyle">
+        <item name="android:background">@drawable/common_button</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CommonButtonStyle.SmallerText" parent="CommonButtonStyle">
+        <item name="android:textSize">13.5sp</item>
+    </style>
+
+    <style name="DialogButton">
+        <item name="android:background">@drawable/dialog_button</item>
+        <item name="android:minWidth">68dp</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Dialog">
+        <item name="android:background">@drawable/dialog_window</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:indeterminate">true</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="ReposNameText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/fontsize_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ReposDetailsText">
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>
+
+    <style name="DialogErrorText">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="UsernameText">
+        <item name="android:textSize">@dimen/fontsize_username</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTitle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/fontsize_title</item>
+        <item name="android:shadowColor">@color/colorBlack</item>
+    </style>
+
+    <style name="LoginDescriptionText">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="LoginEditbox">
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:shadowColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+    </style>
+
+    <style name="ProfileBioText">
+        <item name="android:textSize">@dimen/fontsize_smallMedium</item>
+    </style>
+
+    <style name="ProfileLocationText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+
+    <style name="ToolbarTitleText">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/fontsize_toolbar_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
